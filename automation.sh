@@ -36,14 +36,14 @@ echo $size
 
 
 
-# echo "Installing aws cli"
-# sudo apt update -y
-# sudo apt install awscli -y
+ echo "Installing aws cli"
+ sudo apt update -y
+ sudo apt install awscli -y
 
-# echo "Copying the archive to S3 bucket"
-# aws s3 \
-# cp /tmp/${myname}-httpd-logs-${timestamp}.tar \
-# s3://${s3_bucket}/${myname}-httpd-logs-${timestamp}.tar
+ echo "Copying the archive to S3 bucket"
+ aws s3 \
+ cp /tmp/${myname}-httpd-logs-${timestamp}.tar \
+ s3://${s3_bucket}/${myname}-httpd-logs-${timestamp}.tar
 
 echo "Checking invenntory file exists or not"
 
